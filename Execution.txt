@@ -1,0 +1,27 @@
+SSD: 
+LP webcam: python3 detectnet-cameraLP.py --model=./networks/plate/plate.onnx --class_labels=./networks/plate/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes --camera=/dev/video0 --width=640  --height=480
+
+LP image: python3 detectnet-cameraLP.py --model=./networks/plate/plate.onnx --class_labels=./networks/plate/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes pic5.PNG testpic5.PNG
+
+LP video: python3 detectnet-cameraLP.py --model=./networks/plate/plate.onnx --class_labels=./networks/plate/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes clip3.mp4
+
+
+
+
+
+
+Vehicle webcam: python3 detectnet-cameraVH.py --model=./networks/vehicle/vehicle.onnx --class_labels=./networks/vehicle/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes --camera=/dev/video0 --width=640  --height=480	
+
+Vehicle image: python3 detectnet-cameraVH.py --model=./networks/vehicle/vehicle.onnx --class_labels=./networks/vehicle/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes pic1.jpg testpic1.PNG	
+
+Vehicle video: python3 detectnet-cameraVH.py --model=./networks/vehicle/vehicle.onnx --class_labels=./networks/vehicle/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes clip1.mp4	
+
+
+
+
+
+
+
+
+
+
