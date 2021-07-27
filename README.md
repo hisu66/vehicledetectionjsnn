@@ -25,7 +25,7 @@ Run the License Plate detection with the webcam at:
 python3 detectnet-cameraLP.py --model=./networks/plate/plate.onnx --class_labels=./networks/plate/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes --camera=/dev/video0 --width=640  --height=480
 ```
 
-Or, run the License Plate detection with the "pic5.PNG" image ("testpic5.PNG" is the new output, includes the input and detection boxes, PNG or JPG are also accepted) at:
+Or, run the License Plate detection with the "pic5.PNG" image ("testpic5.PNG" is the new output, stored in "results" folder, PNG or JPG are also accepted) at:
 
 ```
 python3 detectnet-cameraLP.py --model=./networks/plate/plate.onnx --class_labels=./networks/plate/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes test/pic5.PNG result/testpic5.PNG
@@ -47,7 +47,7 @@ Run the Vehicle detection with the webcam at:
 python3 detectnet-cameraVH.py --model=./networks/vehicle/vehicle.onnx --class_labels=./networks/vehicle/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes --camera=/dev/video0 --width=640  --height=480
 ```
 
-Or, run the Licens Plate detection with the "pic1.jpg" image ("testpic1.PNG" is the new output, includes the input and detection boxes, PNG or JPG are also accepted) at:
+Or, run the Licens Plate detection with the "pic1.jpg" image ("testpic1.PNG" is the new output, stored in "results" folder, PNG or JPG are also accepted) at:
 
 ```
 python3 detectnet-cameraVH.py --model=./networks/vehicle/vehicle.onnx --class_labels=./networks/vehicle/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes test/pic1.jpg result/testpic1.PNG	
