@@ -59,6 +59,7 @@ python3 detectnet-cameraVH.py --model=./networks/vehicle/vehicle.onnx --class_la
 ```
 
 Finally, check your tracking files at "CSV" folder and Enjoy! 
+
 Any concerns, please e-mail me at hieutran6698@gmail.com
 
 
