@@ -26,12 +26,12 @@ python3 detectnet-cameraLP.py --model=./networks/plate/plate.onnx --class_labels
 Or, run the License Plate detection with the "clip3.mp4" video at:
 
 ```
-python3 detectnet-cameraLP.py --model=./networks/plate/plate.onnx --class_labels=./networks/plate/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes clip3.mp4
+python3 detectnet-cameraLP.py --model=./networks/plate/plate.onnx --class_labels=./networks/plate/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes test/clip3.mp4
 ```
 Or, run the License Plate detection with the "pic5.PNG" image ("testpic5.PNG" is the new output, includes the input and detection boxes, PNG or JPG are also accepted) at:
 
 ```
-python3 detectnet-cameraLP.py --model=./networks/plate/plate.onnx --class_labels=./networks/plate/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes pic5.PNG testpic5.PNG
+python3 detectnet-cameraLP.py --model=./networks/plate/plate.onnx --class_labels=./networks/plate/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes test/pic5.PNG result/testpic5.PNG
 ```
 
 
@@ -46,12 +46,12 @@ python3 detectnet-cameraVH.py --model=./networks/vehicle/vehicle.onnx --class_la
 Or, run the Vehicle detection with the "clip1.mp4" video at:
 
 ```
-python3 detectnet-cameraVH.py --model=./networks/vehicle/vehicle.onnx --class_labels=./networks/vehicle/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes clip1.mp4	
+python3 detectnet-cameraVH.py --model=./networks/vehicle/vehicle.onnx --class_labels=./networks/vehicle/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes test/clip1.mp4	
 ```
 Or, run the Licens Plate detection with the "pic1.jpg" image ("testpic1.PNG" is the new output, includes the input and detection boxes, PNG or JPG are also accepted) at:
 
 ```
-python3 detectnet-cameraVH.py --model=./networks/vehicle/vehicle.onnx --class_labels=./networks/vehicle/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes pic1.jpg testpic1.PNG	
+python3 detectnet-cameraVH.py --model=./networks/vehicle/vehicle.onnx --class_labels=./networks/vehicle/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes test/pic1.jpg result/testpic1.PNG	
 ```
 
 Finally, Enjoy it! 
