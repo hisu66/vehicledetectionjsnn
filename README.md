@@ -53,7 +53,7 @@ Finally, Enjoy it!
 Any concerns, please e-mail me at hieutran6698@gmail.com
 
 
-##References:
+References:
 -----------------
 ```
 [1] Liu, Wei, et al. "Ssd: Single shot multibox detector." European conference on computer vision. Springer, Cham, 2016.
