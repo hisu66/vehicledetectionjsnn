@@ -58,8 +58,9 @@ Or, run the Vehicle detection with the "clip1.mp4" video (you may have problem i
 python3 detectnet-cameraVH.py --model=./networks/vehicle/vehicle.onnx --class_labels=./networks/vehicle/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes test/clip1.mp4	
 ```
 
-Finally, check your result at CSV folder and Enjoy! 
-Any concerns, please e-mail me at hieutran6698@gmail.com
+	Finally, check your tracking files at "CSV" folder and Enjoy! 
+
+	Any concerns, please e-mail me at hieutran6698@gmail.com
 
 
 References:
