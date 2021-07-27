@@ -54,7 +54,7 @@ Or, run the Licens Plate detection with the "pic1.jpg" image ("testpic1.PNG" is 
 python3 detectnet-cameraVH.py --model=./networks/vehicle/vehicle.onnx --class_labels=./networks/vehicle/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes test/pic1.jpg result/testpic1.PNG	
 ```
 
-Finally, Enjoy it! 
+Finally, check your result at CSV folder and Enjoy! 
 Any concerns, please e-mail me at hieutran6698@gmail.com
 
 
