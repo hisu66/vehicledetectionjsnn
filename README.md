@@ -1,17 +1,15 @@
-# vehicledetectionjsnn
+# Transportation System using Jetson Nano
 
 
-#Transportation System using Jetson Nano 
 Vehicle and License Plate detection in real-time at ~40 FPS
 -----------------
-
-First, you need to install the libraries:
+Install the libraries:
 
 ```
 pip3 install -r requirements.txt
 ```
 
-And move to the vehicledetectionjsnn folder:
+Move to the main folder:
 
 ```
 cd vehicledetectionjsnn
@@ -32,7 +30,7 @@ Or, run the Licens Plate detection with the image ("pic5.PNG" is the input image
 ```
 python3 detectnet-cameraLP.py --model=./networks/plate/plate.onnx --class_labels=./networks/plate/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes pic5.PNG testpic5.PNG
 ```
-
+-----------------
 
 Then, run the Vehicle detection with the webcam at:
 
@@ -52,7 +50,7 @@ python3 detectnet-cameraVH.py --model=./networks/vehicle/vehicle.onnx --class_la
 ```
 
 Finally, Enjoy it! 
-Any concerns, please email me at hieutran6698@gmail.com
+Any concerns, please e-mail me at hieutran6698@gmail.com
 
 
 #References:
