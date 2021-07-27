@@ -15,7 +15,10 @@ Move to the main folder:
 cd vehicledetectionjsnn
 ```
 
-Then, run the License Plate detection with the webcam at:
+
+License Plate Detection:
+-----------------
+Run the License Plate detection with the webcam at:
 
 ```
 python3 detectnet-cameraLP.py --model=./networks/plate/plate.onnx --class_labels=./networks/plate/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes --camera=/dev/video0 --width=640  --height=480
@@ -30,9 +33,11 @@ Or, run the License Plate detection with the "pic5.PNG" image ("testpic5.PNG" is
 ```
 python3 detectnet-cameraLP.py --model=./networks/plate/plate.onnx --class_labels=./networks/plate/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes pic5.PNG testpic5.PNG
 ```
------------------
 
-Then, run the Vehicle detection with the webcam at:
+
+Vehicle Detection:
+-----------------
+Run the Vehicle detection with the webcam at:
 
 ```
 python3 detectnet-cameraVH.py --model=./networks/vehicle/vehicle.onnx --class_labels=./networks/vehicle/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes --camera=/dev/video0 --width=640  --height=480
