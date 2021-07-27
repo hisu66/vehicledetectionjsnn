@@ -1,7 +1,7 @@
 # vehicledetectionjsnn
 
-Transportation System using Jetson Nano
 
+#Transportation System using Jetson Nano 
 Vehicle and License Plate detection in real-time at ~40 FPS
 -----------------
 
@@ -55,9 +55,11 @@ Finally, Enjoy it!
 Any concerns, please email me at hieutran6698@gmail.com
 
 
-References:
+#References:
+-----------------
+```
 [1] Liu, Wei, et al. "Ssd: Single shot multibox detector." European conference on computer vision. Springer, Cham, 2016.
 [2] Howard, Andrew G., et al. "Mobilenets: Efficient convolutional neural networks for mobile vision applications." arXiv preprint arXiv:1704.04861 (2017).
 [3] https://github.com/dusty-nv/jetson-inference
 [3] https://github.com/winter2897/Real-time-Auto-License-Plate-Recognition-with-Jetson-Nano
-
+```
