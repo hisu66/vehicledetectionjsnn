@@ -15,7 +15,7 @@ Install the libraries:
 ```
 pip3 install -r requirements.txt
 ```
-**This project needs PyTorch to run. If you haven't downloaded PyTorch since the basic setup for Jetson Nano, install it following the instructions given below (PyTorch ver 1.7 is my suggestion)** [PyTorch for Jetson Nano](https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-9-0-now-available/72048)
+This project needs **PyTorch** to run. If you haven't downloaded PyTorch since the basic setup for Jetson Nano, install it following the instructions given below (PyTorch ver 1.7 is my suggestion) [PyTorch for Jetson Nano](https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-9-0-now-available/72048)
 
 Vehicle Detection:
 -----------------
