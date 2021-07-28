@@ -16,9 +16,37 @@ Install the libraries:
 pip3 install -r requirements.txt
 ```
 
+Vehicle Detection:
+-----------------
+
+<div align='center'>
+  <img src="./document/vehicle.gif">
+</div>
+
+Run the Vehicle detection with the webcam at:
+
+```
+python3 detectnet-cameraVH.py --model=./networks/vehicle/vehicle.onnx --class_labels=./networks/vehicle/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes --camera=/dev/video0 --width=640  --height=480
+```
+
+Or, run the Licens Plate detection with the "pic1.jpg" image ("testpic1.PNG" is the new output, stored in "results" folder, PNG or JPG are also accepted) at:
+
+```
+python3 detectnet-cameraVH.py --model=./networks/vehicle/vehicle.onnx --class_labels=./networks/vehicle/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes test/pic1.jpg result/testpic1.PNG	
+```
+Or, run the Vehicle detection with the "clip1.mp4" video (you may have problem in the first time after reboot, just ignore it, close the terminal and run again) at:
+
+```
+python3 detectnet-cameraVH.py --model=./networks/vehicle/vehicle.onnx --class_labels=./networks/vehicle/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes test/clip1.mp4	
+```
 
 License Plate Detection:
 -----------------
+
+<div align='center'>
+  <img src="./document/plate.gif">
+</div>
+
 Run the License Plate detection with the webcam at:
 
 ```
@@ -35,27 +63,6 @@ Or, run the License Plate detection with the "clip3.mp4" video (you may have pro
 
 ```
 python3 detectnet-cameraLP.py --model=./networks/plate/plate.onnx --class_labels=./networks/plate/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes test/clip3.mp4
-```
-
-
-
-Vehicle Detection:
------------------
-Run the Vehicle detection with the webcam at:
-
-```
-python3 detectnet-cameraVH.py --model=./networks/vehicle/vehicle.onnx --class_labels=./networks/vehicle/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes --camera=/dev/video0 --width=640  --height=480
-```
-
-Or, run the Licens Plate detection with the "pic1.jpg" image ("testpic1.PNG" is the new output, stored in "results" folder, PNG or JPG are also accepted) at:
-
-```
-python3 detectnet-cameraVH.py --model=./networks/vehicle/vehicle.onnx --class_labels=./networks/vehicle/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes test/pic1.jpg result/testpic1.PNG	
-```
-Or, run the Vehicle detection with the "clip1.mp4" video (you may have problem in the first time after reboot, just ignore it, close the terminal and run again) at:
-
-```
-python3 detectnet-cameraVH.py --model=./networks/vehicle/vehicle.onnx --class_labels=./networks/vehicle/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes test/clip1.mp4	
 ```
 
 Finally, check your tracking files at "CSV" folder and Enjoy! 
