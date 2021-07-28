@@ -1,7 +1,10 @@
-# Transportation System using Jetson Nano (MobileNet-SSD)
+# Transportation System with Jetson Nano
 
 
-Vehicle and License Plate detection in real-time at ~40 FPS
+Real-time Vehicle and License Plate detection at ~40 FPS
+
+
+**Model: MobileNet-SSD**
 -----------------
 
 Move to the main folder:
