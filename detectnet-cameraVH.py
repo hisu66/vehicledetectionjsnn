@@ -56,7 +56,7 @@ input = jetson.utils.videoSource(opt.input_URI, argv=sys.argv)
 output = jetson.utils.videoOutput(opt.output_URI, argv=sys.argv+is_headless)
 with open('CSV/checkVehicle.csv', 'w', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(['Local Time','Total vehicles','No. Motorcycles','No. Cars','No. Other Vehicles','Status'])
+        writer.writerow(['Local Time','Total vehicles','No. Motorcycles','No. Cars'])
 
 # process frames until the user exits
         while True:
@@ -77,24 +77,22 @@ with open('CSV/checkVehicle.csv', 'w', newline='') as file:
 #Command for condition of object detected
             h1=0
             h2=0
-            h3=0
             allobject=len(detections) 
             for detection in detections:
                 print(detection)
                 if detection.ClassID==1: h1 = h1+1
                 if detection.ClassID==2: h2 = h2+1
-                if detection.ClassID==3: h3 = h3+1
 # 		print("OK")
 			#h1=h1+1
-            condition = (h1/(allobject+0.0000001))*100 #To prevent number 0 in the beginning
+            #condition = (h1/(allobject+0.0000001))*100 #To prevent number 0 in the beginning
 	#Check condition for object detected
-            if len(detections)>=4: notice = 'Stuck'
-            else: notice = 'Normal'
+            #if len(detections)>=4: notice = 'Stuck'
+            #else: notice = 'Normal'
             
             second2 = int(time.time()) #To list the row for second unit
             #local = second2 - second1 #To list the row for second unit
-            writer.writerow([localtime,allobject,h1,h2,h3,notice])
-           # if ((second2 - second1) == 1): writer.writerow([localtime,allobject,h1,h2,h3,notice]) #Add 'FPS' to show the FPS in CSV
+            writer.writerow([localtime,allobject,h1,h2])
+           # if ((second2 - second1) == 1): writer.writerow([localtime,allobject,h1,h2]) #Add 'FPS' to show the FPS in CSV
             
 
 	# render the image
